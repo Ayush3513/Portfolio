@@ -11,7 +11,7 @@ const [animationName, setanimationName] = useState("idle");
 
 
   return (
-    <section className="c-space my-20 lg:pt-40">
+    <section className="c-space my-20 lg:pt-30">
       <div className="w-full text-white-600">
         <h3 className="head-text">My Work Experience</h3>
         <div className="work-container">
