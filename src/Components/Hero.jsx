@@ -10,6 +10,7 @@ import Cube from './Cube'
 import Rings from './Ring'
 import HeroCamera from './HeroCamera'
 import Button from './Button'
+import Navbar from './Navbar'
 
 const Hero = () => {
   // const x = useControls("hackerRoom",{
@@ -61,6 +62,7 @@ let isSmall = useMediaQuery({maxWidth:480})
 
   return (
     <section className='min-h-screen flex flex-col w-full relative'>
+      <Navbar />
         <div className="w-full flex flex-col sm:mt-36 mt-20 c-space gap-3">
             <p className=' font-medium text-2xl sm:text-5xl text-white text-center font-generalsans'>Hi,I am Ayush <span className='waving-hand'>👋</span></p>
         <p className='hero_tag text-gray_gradient'>Building Products & Brands</p>
@@ -91,7 +93,7 @@ let isSmall = useMediaQuery({maxWidth:480})
               </Suspense>
             </Canvas>
         </div>
-        <div className="absolute left-0 right-0 bottom-7 w-full z-10 c-space">
+        <div className="absolute left-0 right-0 lg:bottom-7 bottom-24 w-full z-10 c-space">
           <a href="#about">
             {<Button name="Let's Work Together" isBeam classContainer="sm:w-fit w-full sm:min-w-96 "/>}
           </a>

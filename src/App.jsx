@@ -14,7 +14,6 @@ const App = () => {
 
   return (
     <main className='max-w-8xl mx-auto'>
-      <Navbar />
       <Hero />
       <About />
       <Projects />

@@ -5,6 +5,7 @@ const Contact = () => {
   const formRef = useRef();
   const [loading, setloading] = useState(false);
   const [shouldResetForm, setShouldResetForm] = useState(false);
+  const [mobile, setmobile] = useState(window.innerWidth <= 1024 ? true : false);
   const [form, setform] = useState({
     name: "",
     email: "",
@@ -54,15 +55,15 @@ const Contact = () => {
   }, [shouldResetForm]);
 
   return (
-    <section className="c-space my-20">
+    <section id="contact" className="c-space my-20">
       <div className="relative min-h-screen flex items-center justify-center flex-col">
-        <img
+        {mobile ? "" : (<img
           src="/assets/terminal.png"
           alt=""
-          className="absolute inset-0 min-h-screen"
-        />
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-h-[105vh]"
+        />)}
 
-        <div className="contact-container xl:mt-80">
+        <div className="contact-container  ">
           <h3 className="head-text">Let's Talk</h3>
           <p className="text-lg text-white-600 mt-3">
             Whether you're looking to build a new website, improve your existing
