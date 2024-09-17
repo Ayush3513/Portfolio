@@ -55,7 +55,7 @@ const Contact = () => {
   }, [shouldResetForm]);
 
   return (
-    <section id="contact" className="c-space my-20 lg:pt-30">
+    <section id="contact" className="c-space my-20 lg:pt-28">
       <div className="relative min-h-screen flex items-center justify-center flex-col">
         {mobile ? "" : (<img
           src="/assets/terminal.png"
