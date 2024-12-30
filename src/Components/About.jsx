@@ -29,8 +29,7 @@ const About = () => {
             <div className="">
               <p className="grid-headtext">Hi,I'm Ayush</p>
               <p className="grid-subtext">
-                With 1 years of experience, I have honed my skills in frontend
-                developent, with focus on making jaw dropping animated websites.
+              Hi, I'm Ayush. I craft interactive, scalable web solutions using React, Next.js, AWS, animations, and modern web technologies.
               </p>
             </div>
           </div>
@@ -46,7 +45,7 @@ const About = () => {
             <div className="">
               <p className="grid-headtext">Tech Stack</p>
               <p className="grid-subtext">
-                I spacialisze in JavaScipt with a focus on React ecosystems.
+                React | Next | Node | Express | MongoDB | Posgresql | AWS | Docker | CI/CD | Redux | TypeScript | TailwindCSS |  GSAP | Framer Motion
               </p>
             </div>
           </div>

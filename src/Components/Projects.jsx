@@ -26,7 +26,7 @@ const Projects = () => {
     <section id="work" className="c-space my-20 xl:mt-[-27vw] lg:pt-28">
       <p className="head-text">My Work</p>
 
-      <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
+      <div className=" mt-12  w-full">
         <div className="relative flex flex-col gap-5  sm:p-10 py-10 px-5 shadow-2xl shadow-black-200">
           
             <img
@@ -56,13 +56,13 @@ const Projects = () => {
           <div className="flex items-center justify-between flex-wrap gap-5">
             <div className="flex items-center gap-3">
               {currentProject.tags.map((tag,i)=>(
-                <div key={i} className="tech-logo">
-                  <img src={tag.path} alt={tag.name} />
+                <div key={i} className="tech-logo rounded-full overflow-hidden">
+                  <img className="h-full w-full " src={tag.path} alt={tag.name} />
                 </div>  
               ))}
             </div>
 
-            <a className="flex items-center gap-2 cursor-pointer text-white-600" href={currentProject.href} target="_blank">
+            <a className="flex z-10 items-center gap-2 cursor-pointer text-white-600" href={currentProject.href} target="_blank">
                     <p>Check Live Site</p>
                     <img src="/assets/arrow-up.png" alt="" rel="noreferrer" className="w-3 h-3" />
                   </a>
@@ -78,20 +78,6 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="border border-black-300 bg-black-200 rounded-lg h-96 md:h-full">
-          <Canvas>
-            <ambientLight intensity={Math.PI} />
-            <directionalLight position={[10,10,10]} intensity={2} />
-            <Center >
-              <Suspense fallback={<Loader />}>
-                  <group scale={2} position={[0,-3,0]} rotation={[0,-0.1,0]}>
-                    <Comupter txt={currentProject.texture} />
-                  </group>
-              </Suspense>
-            </Center>
-            <OrbitControls maxPolarAngle={Math.PI /2} enableZoom={false} />
-          </Canvas>
-        </div>
       </div>
     </section>
   );

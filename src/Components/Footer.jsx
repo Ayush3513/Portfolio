@@ -9,15 +9,12 @@ const Footer = () => {
             <p>Privacy Policy</p>
         </div>
         <div className="flex gap-3 ">
-            <div className="social-icon">
-                <img src="/assets/github.svg" alt=""  className='w-1/2 h-1/2'/>
-            </div>
-            <div className="social-icon">
-                <img src="/assets/twitter.svg" alt=""  className='w-1/2 h-1/2'/>
-            </div>
-            <div className="social-icon">
-                <img src="/assets/instagram.svg" alt=""  className='w-1/2 h-1/2'/>
-            </div>
+            <a  target="_blank" href="https://github.com/Ayush3513" className="social-icon">
+                <img  src="/assets/github.svg" alt=""  className='w-1/2 h-1/2'/>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/ayush_chavda01/" className="social-icon">
+                <img  src="/assets/instagram.svg" alt=""  className='w-1/2 h-1/2'/>
+            </a>
         </div>
         <p className='text-white-500'>
             2024 Ayush. All rights reserved.
