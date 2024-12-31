@@ -147,7 +147,7 @@ export const navLinks = [
         {
           id: 3,
           name: 'Postgresql',
-          path: '/public/assets/postgre.png',
+          path: '/assets/postgre.png',
         },{
           id: 4,
           name: 'Node.js',
